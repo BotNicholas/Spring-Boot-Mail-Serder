@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "667f6cd0-6122-4466-bdc7-8bed8c0a1f6c",
+		"name": "Demo Mail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31306025",
+		"_collection_link": "https://test99-7445.postman.co/workspace/5daf131d-480b-4f34-bd73-103e1dcf7177/collection/31306025-667f6cd0-6122-4466-bdc7-8bed8c0a1f6c?action=share&source=collection_link&creator=31306025"
+	},
+	"item": [
+		{
+			"name": "Send Simple Message",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Hello, Nick!"
+				},
+				"url": {
+					"raw": "http://localhost:8080/send",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send Mime Message",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Hello, Nick!"
+				},
+				"url": {
+					"raw": "http://localhost:8080/send/mime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"send",
+						"mime"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
